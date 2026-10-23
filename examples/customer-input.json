@@ -1,0 +1,14 @@
+{
+  "business": "Example Accountancy Practice",
+  "clients": [
+    "Limited companies",
+    "Start-ups"
+  ],
+  "services": [
+    "Annual accounts",
+    "Payroll"
+  ],
+  "approach": "An initial conversation, agreed scope in writing and a named practice contact.",
+  "evidence": "Add only qualifications and memberships the practice has verified.",
+  "action": "Book an introductory conversation"
+}

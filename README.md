@@ -1,60 +1,49 @@
-# Practice Service Matrix
+# Accountancy Website Content Planner
 
-Practice Service Matrix helps an accountancy firm plan clear website explanations of its services. Record the clients a service is for, what is included, what needs confirmation and how a prospective client should get in touch.
+Choose the clients and services that matter to your practice, then create a focused brief for your website content.
 
-The output is a content brief for the practice to review. It does not provide tax or accounting advice. Maintained by [Accountant Web Design](https://accountantwebdesign.uk/), operated by JW Digital Services Ltd.
+**For accountants and practice managers. No coding knowledge needed.**
 
-![Complete example](docs/preview.png)
+[Open the free tool](https://accountant-web-design.github.io/practice-service-matrix/) · [See a fictional worked example](https://accountant-web-design.github.io/practice-service-matrix/examples/customer-output.html)
 
-## Live demo
+![Desktop preview](docs/preview.png)
 
-[Try Practice Service Matrix](https://accountant-web-design.github.io/practice-service-matrix/). The demo runs in your browser; entered data is not uploaded by the tool. GitHub provides the hosting and handles request logs.
+## How to use it
 
-## Start locally
+1. Open the tool in your browser. No installation or account is needed.
+2. Use your own business details in the labelled fields, or choose **Try a fictional example**.
+3. Choose **Prepare my content brief** and review the result.
+4. Adjust your answers, then copy the result, download a text file or choose **Print / Save PDF**.
 
-Requires Node.js 22 or later. No runtime dependencies or account required.
+A service-led content brief, with useful questions to answer before writing.
+
+## What to expect
+
+You know your clients and how your practice works. This turns that knowledge into a useful starting point for your website.
+
+This is a website planning tool. It does not provide tax or accountancy advice, or invent credentials for your practice.
+
+Your answers are processed in the browser tab. They are not uploaded, emailed or saved by the tool. Refreshing or closing the tab clears them. Save your result before leaving. GitHub provides hosting and handles normal request logs. Example details are fictional, not customer results.
+
+## Design and maintenance
+
+The interface uses the colours, typography and visual treatment of [Accountant Web Design](https://accountantwebdesign.uk/). The tool is maintained by Accountant Web Design, operated by JW Digital Services Ltd. The commercial website is a separate project.
+
+## For developers
+
+The customer tool uses native HTML controls and small browser modules, with no runtime framework. Its planning or calculation rules are in `src/customer.js`; presentation helpers are in `src/customer-ui.js`.
 
 ```sh
-npm ci
+npm ci --ignore-scripts
 npm test
 npm run build
 npm run serve
 ```
 
-Open http://127.0.0.1:4173/ for the complete local demonstration. Browser examples do not upload or persist entered data. The optional development server binds to loopback only.
+Open the local address printed by the server. `npm run build:pages` prepares the static GitHub Pages artifact. Tests cover the customer rules and output escaping.
 
-## Input and output
+The original v0.1 developer helpers remain in `src/index.js` for compatibility, with their original examples. They are not needed to use the customer tool. The existing repository name and Pages URL are retained so earlier links keep working.
 
-Supply practice and rows with service, client_type, client_question, scope, inclusions, exclusions, evidence_needed, next_step and content_owner. claims is an optional list of {text, approved}. Rows produce a brief, not a page-per-row recommendation.
+## Licence and feedback
 
-Use [examples/input.json](examples/input.json) as the complete input contract. Compare the generated [JSON result](examples/output.json), [Markdown report](examples/output.md) and [complete HTML](examples/output.html). The demo is in [demo/index.html](demo/index.html). It needs the local server for JavaScript modules. HTML reports can be opened as standalone files.
-
-```sh
-node cli.mjs examples/input.json --format json
-node cli.mjs examples/input.json --format html --output report.html
-node cli.mjs examples/input.json --format md --output report.md
-```
-
-This resource uses nested JSON input. See the complete example and `node cli.mjs --help`.
-
-## Worked example
-
-Use a fictional practice serving sole traders, small limited companies and charities. Include bookkeeping, payroll and annual accounts as sample service labels, without deadlines, tax rates or accounting advice. One row should lack an evidence owner; two should share a question that belongs in the same explanation. Show how the output groups these correctly.
-
-All supplied example records are synthetic. No clients, outcomes, current professional advice or real service availability are represented by them. Keep real records private and review output before sharing it.
-
-## Checks
-
-- Required fields and duplicate rows produce useful validation messages, without deleting entered content.
-- Shared questions group predictably. The tool does not create new page recommendations merely because a row exists.
-- Unapproved claims and missing evidence owners stay marked as review work in the generated brief.
-- CSV quoting, commas, line breaks and Unicode survive import and export. Spreadsheet exports neutralise formula-like input.
-- The example can be reproduced locally without a login, API key or document upload.
-
-The automated results and browser checks performed for this release are recorded in [verification.md](docs/verification.md). Manual screen-reader testing has not been performed. A passing automated check is not accessibility certification.
-
-## Contribute and maintain
-
-Use [Issues](https://github.com/Accountant-Web-Design/practice-service-matrix/issues) for a reproducible bug and [Discussions](https://github.com/Accountant-Web-Design/practice-service-matrix/discussions) for questions and improvements. Follow [CONTRIBUTING.md](CONTRIBUTING.md); report vulnerabilities privately using [SECURITY.md](SECURITY.md). See [CHANGELOG.md](CHANGELOG.md) for releases. Maintenance is best effort.
-
-Code, original illustrations and synthetic fixtures are MIT licensed. There is no required website backlink when reusing the resource. Commercial brand assets and third-party material are not included.
+MIT for tool code. Bundled typefaces retain their original licence notices in `demo/assets/font-licences`. [Ideas and feedback](https://github.com/Accountant-Web-Design/practice-service-matrix/discussions/1).

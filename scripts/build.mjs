@@ -1,6 +1,11 @@
-import fs from 'node:fs/promises';import {analyse,render,guide} from '../src/index.js';import {asMarkdown} from '../src/util.js';import {documentHTML} from './html.mjs';
-const root=new URL('../',import.meta.url),meta=JSON.parse(await fs.readFile(new URL('resource.json',root),'utf8')),input=JSON.parse(await fs.readFile(new URL('examples/input.json',root),'utf8')),result=analyse(input);
-await fs.writeFile(new URL('examples/output.json',root),JSON.stringify(result,null,2)+'\n');await fs.writeFile(new URL('examples/output.md',root),asMarkdown(result));
-if(meta.slug!=='keyboard-drawer-lab')await fs.writeFile(new URL('demo/index.html',root),await documentHTML(meta,render(result),{interactive:meta.slug!=='trades-site-audit-kit',input:JSON.stringify(input,null,2),guide}));
-await fs.writeFile(new URL('examples/output.html',root),await documentHTML(meta,render(result)));
-console.log('Built '+meta.slug+': complete HTML, JSON and Markdown examples');
+import fs from 'node:fs/promises';
+import {documentHTML} from './html.mjs';
+import {config,evaluate} from '../src/customer.js';
+import {reportText} from '../src/customer-ui.js';
+const meta=JSON.parse(await fs.readFile(new URL('../resource.json',import.meta.url),'utf8'));
+const result=evaluate(config.example);
+await fs.writeFile(new URL('../demo/index.html',import.meta.url),await documentHTML(meta));
+await fs.writeFile(new URL('../examples/customer-input.json',import.meta.url),JSON.stringify(config.example,null,2)+'\n');
+await fs.writeFile(new URL('../examples/customer-output.html',import.meta.url),await documentHTML(meta,{sample:result}));
+await fs.writeFile(new URL('../examples/customer-output.txt',import.meta.url),reportText(result)+'\n');
+console.log('Built customer tool and worked example: '+config.title);

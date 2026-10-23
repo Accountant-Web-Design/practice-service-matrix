@@ -3,9 +3,10 @@
   "org": "Accountant-Web-Design",
   "brand": "Accountant Web Design",
   "slug": "practice-service-matrix",
-  "title": "Practice Service Matrix",
+  "title": "Accountancy Website Content Planner",
   "profile": "Accountancy websites and tools for planning clear service explanations. Operated by JW Digital Services Ltd.",
-  "accent": "#253e59",
-  "tint": "#eaf0f6",
-  "summary": "Plan accountancy website content by service, client type, required evidence and next step."
+  "accent": "#651822",
+  "tint": "#eae4d8",
+  "summary": "Choose the clients and services that matter to your practice, then create a focused brief for your website content.",
+  "brandMark": "<svg viewBox=\"0 0 48 48\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M9 7h30v36H9Zm7 10h16m-16 9h16m-16 9h9\"/></svg>"
 }
