@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1
+
+- Fixed the local preview URL so browser modules and bundled fonts load from the correct directory. The live tool interface is unchanged.
+
 ## 0.2.0
 
 - Rebuilt the public experience as **Accountancy Website Content Planner** for business owners.

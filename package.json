@@ -1,6 +1,6 @@
 {
   "name": "practice-service-matrix",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Choose the clients and services that matter to your practice, then create a focused brief for your website content.",
   "type": "module",
   "private": false,
