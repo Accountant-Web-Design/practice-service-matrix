@@ -1,0 +1,58 @@
+{
+  "practice": "Example Accountancy / fictional practice",
+  "rows": [
+    {
+      "service": "Bookkeeping",
+      "client_type": "Sole traders",
+      "client_question": "What records do you need from me?",
+      "scope": "Explain the records and working arrangements the practice agrees with each client.",
+      "inclusions": "Agreed routine records and a clear handover.",
+      "exclusions": "Specialist advice outside the written scope.",
+      "evidence_needed": "Confirm actual software and handover process.",
+      "next_step": "Discuss the business records.",
+      "content_owner": "Practice editor",
+      "claims": []
+    },
+    {
+      "service": "Bookkeeping",
+      "client_type": "Small companies",
+      "client_question": "What records do you need from me?",
+      "scope": "Use the shared explanation where the process is the same.",
+      "inclusions": "The agreed bookkeeping brief.",
+      "exclusions": "Any unagreed additional work.",
+      "evidence_needed": "",
+      "next_step": "Describe the records and existing arrangements.",
+      "content_owner": "",
+      "claims": [
+        {
+          "text": "Unverified savings claim",
+          "approved": false
+        }
+      ]
+    },
+    {
+      "service": "Payroll",
+      "client_type": "Small companies",
+      "client_question": "Who sends the changes each period?",
+      "scope": "Explain responsibility for approved payroll inputs.",
+      "inclusions": "The agreed payroll process.",
+      "exclusions": "Employment advice.",
+      "evidence_needed": "Confirm responsibilities with the practice.",
+      "next_step": "Discuss the payroll brief.",
+      "content_owner": "Practice editor",
+      "claims": []
+    },
+    {
+      "service": "Annual accounts",
+      "client_type": "Charities",
+      "client_question": "Does the practice support our organisation type?",
+      "scope": "The practice must approve its actual service scope.",
+      "inclusions": "Only work the practice confirms.",
+      "exclusions": "Unconfirmed specialist work.",
+      "evidence_needed": "Approve professional experience claims.",
+      "next_step": "Ask the practice about scope.",
+      "content_owner": "Practice editor",
+      "claims": []
+    }
+  ]
+}

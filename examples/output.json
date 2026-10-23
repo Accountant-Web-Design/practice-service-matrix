@@ -1,0 +1,116 @@
+{
+  "title": "Example Accountancy / fictional practice service brief",
+  "summary": "Grouped by service and shared client question. No tax advice or automatic page recommendations.",
+  "services": [
+    {
+      "name": "Bookkeeping",
+      "clients": [
+        "Sole traders",
+        "Small companies"
+      ],
+      "questions": [
+        "What records do you need from me?"
+      ],
+      "rows": [
+        {
+          "service": "Bookkeeping",
+          "client_type": "Sole traders",
+          "client_question": "What records do you need from me?",
+          "scope": "Explain the records and working arrangements the practice agrees with each client.",
+          "inclusions": "Agreed routine records and a clear handover.",
+          "exclusions": "Specialist advice outside the written scope.",
+          "evidence_needed": "Confirm actual software and handover process.",
+          "next_step": "Discuss the business records.",
+          "content_owner": "Practice editor",
+          "claims": []
+        },
+        {
+          "service": "Bookkeeping",
+          "client_type": "Small companies",
+          "client_question": "What records do you need from me?",
+          "scope": "Use the shared explanation where the process is the same.",
+          "inclusions": "The agreed bookkeeping brief.",
+          "exclusions": "Any unagreed additional work.",
+          "evidence_needed": "",
+          "next_step": "Describe the records and existing arrangements.",
+          "content_owner": "",
+          "claims": []
+        }
+      ]
+    },
+    {
+      "name": "Payroll",
+      "clients": [
+        "Small companies"
+      ],
+      "questions": [
+        "Who sends the changes each period?"
+      ],
+      "rows": [
+        {
+          "service": "Payroll",
+          "client_type": "Small companies",
+          "client_question": "Who sends the changes each period?",
+          "scope": "Explain responsibility for approved payroll inputs.",
+          "inclusions": "The agreed payroll process.",
+          "exclusions": "Employment advice.",
+          "evidence_needed": "Confirm responsibilities with the practice.",
+          "next_step": "Discuss the payroll brief.",
+          "content_owner": "Practice editor",
+          "claims": []
+        }
+      ]
+    },
+    {
+      "name": "Annual accounts",
+      "clients": [
+        "Charities"
+      ],
+      "questions": [
+        "Does the practice support our organisation type?"
+      ],
+      "rows": [
+        {
+          "service": "Annual accounts",
+          "client_type": "Charities",
+          "client_question": "Does the practice support our organisation type?",
+          "scope": "The practice must approve its actual service scope.",
+          "inclusions": "Only work the practice confirms.",
+          "exclusions": "Unconfirmed specialist work.",
+          "evidence_needed": "Approve professional experience claims.",
+          "next_step": "Ask the practice about scope.",
+          "content_owner": "Practice editor",
+          "claims": []
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "code": "evidence",
+      "message": "Confirm: Confirm actual software and handover process.",
+      "source": "Bookkeeping"
+    },
+    {
+      "code": "owner",
+      "message": "Assign a content owner",
+      "source": "Bookkeeping"
+    },
+    {
+      "code": "claim",
+      "message": "An unapproved claim is excluded from the publication brief",
+      "source": "Bookkeeping"
+    },
+    {
+      "code": "evidence",
+      "message": "Confirm: Confirm responsibilities with the practice.",
+      "source": "Payroll"
+    },
+    {
+      "code": "evidence",
+      "message": "Confirm: Approve professional experience claims.",
+      "source": "Annual accounts"
+    }
+  ],
+  "markdown": "## Bookkeeping\n\nFor: Sole traders, Small companies\n\n- What records do you need from me?\n\nExplain the records and working arrangements the practice agrees with each client.\nIncluded: Agreed routine records and a clear handover.\nExcluded: Specialist advice outside the written scope.\nNext step: Discuss the business records.\n\nUse the shared explanation where the process is the same.\nIncluded: The agreed bookkeeping brief.\nExcluded: Any unagreed additional work.\nNext step: Describe the records and existing arrangements.\n\n## Payroll\n\nFor: Small companies\n\n- Who sends the changes each period?\n\nExplain responsibility for approved payroll inputs.\nIncluded: The agreed payroll process.\nExcluded: Employment advice.\nNext step: Discuss the payroll brief.\n\n## Annual accounts\n\nFor: Charities\n\n- Does the practice support our organisation type?\n\nThe practice must approve its actual service scope.\nIncluded: Only work the practice confirms.\nExcluded: Unconfirmed specialist work.\nNext step: Ask the practice about scope."
+}

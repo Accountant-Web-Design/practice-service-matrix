@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Practice Service Matrix example structure",
+  "description": "Structural guide to the supplied example. Runtime validation enforces supported states, publication gates and cross-field rules.",
+  "type": "object",
+  "properties": {
+    "practice": {
+      "type": "string"
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "service": {
+            "type": "string"
+          },
+          "client_type": {
+            "type": "string"
+          },
+          "client_question": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "inclusions": {
+            "type": "string"
+          },
+          "exclusions": {
+            "type": "string"
+          },
+          "evidence_needed": {
+            "type": "string"
+          },
+          "next_step": {
+            "type": "string"
+          },
+          "content_owner": {
+            "type": "string"
+          },
+          "claims": {
+            "type": "array"
+          }
+        },
+        "required": [
+          "service",
+          "client_type",
+          "client_question",
+          "scope",
+          "inclusions",
+          "exclusions",
+          "evidence_needed",
+          "next_step",
+          "content_owner",
+          "claims"
+        ]
+      }
+    }
+  },
+  "required": [
+    "practice",
+    "rows"
+  ]
+}
