@@ -6,6 +6,10 @@ The output is a content brief for the practice to review. It does not provide ta
 
 ![Complete example](docs/preview.png)
 
+## Live demo
+
+[Try Practice Service Matrix](https://accountant-web-design.github.io/practice-service-matrix/). The demo runs in your browser; entered data is not uploaded by the tool. GitHub provides the hosting and handles request logs.
+
 ## Start locally
 
 Requires Node.js 22 or later. No runtime dependencies or account required.

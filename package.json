@@ -12,7 +12,8 @@
     "test": "node --test",
     "build": "node scripts/build.mjs",
     "serve": "node scripts/serve.mjs",
-    "check": "node --test && node scripts/build.mjs"
+    "check": "node --test && node scripts/build.mjs",
+    "build:pages": "node scripts/build-pages.mjs"
   },
   "repository": {
     "type": "git",
